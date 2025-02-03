@@ -280,7 +280,6 @@ public class ReplanterPlus implements ModInitializer {
 
 		Registry<Enchantment> enchantRegistry = enchantRegistryOptional.get();
 		Optional<RegistryEntry.Reference<Enchantment>> fortune = enchantRegistry.getEntry(Enchantments.FORTUNE.getValue());
-		// Server removed the Fortune enchantment????
 		if (!fortune.isPresent())
 			return;
 
